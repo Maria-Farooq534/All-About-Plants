@@ -42,23 +42,31 @@ body{
     }
 
     & main{
-
-        & .title{
-            color: rgb(18, 16, 16);
-            padding: 10px;
-        }
-        & .sec-1{
+        & .hero-section{
             align-items: center;
-            & .img-gallery{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            & .title{
+                color: rgb(18, 16, 16);
+                padding: 10px;
+
+            }
+            & #img-sec{
+                align-items: center;
+                width: 50%;
                 align-items: center;
                 justify-content: space-around;
-
+    
+                    
+                    & img{
+                        height: 200px;
+                        width: 300px;
+                    }
                 
-                & img{
-                    height: 100px;
-                    width: 150px;
-                }
             }
         }
+
     }
 }
